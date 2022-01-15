@@ -8,7 +8,6 @@ cd event-management
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate
 ```
 ### Configuration
 #### Database
@@ -19,6 +18,10 @@ DB_PORT={{your databse port}
 DB_DATABASE={your database}
 DB_USERNAME={database user}
 DB_PASSWORD={database password
+```
+Then run the below command in ternminal
+```
+php artisan migrate
 ```
 #### Email
 ```text
